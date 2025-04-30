@@ -1,0 +1,15 @@
+name: Rust Proj Dev Container
+services:
+  devcontainer:
+    container_name: rust-devcontainer
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - "linux/amd64"
+    volumes:
+      - ..:/app/
+      - ~/.aws:/home/vscode/.aws # for awscli and aws-sdk-rust
+    environment:
+      - USER=chukwudi
+    tty: true
