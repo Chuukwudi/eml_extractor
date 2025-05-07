@@ -1,5 +1,5 @@
 {
-	"name": "Rust",
+	"name": "Rust eml extractor",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "devcontainer",
 	"workspaceFolder": "/app/",

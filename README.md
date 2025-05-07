@@ -11,3 +11,11 @@ cargo init --name my-project .
 ```
 
 This will initialise the project with the name you provided. You can now start editing the `src/main.rs` file and start building your project.
+
+
+{
+    group: {
+        name: email
+        name: email
+    }
+}

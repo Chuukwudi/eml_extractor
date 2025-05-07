@@ -1,7 +1,7 @@
-name: Rust Proj Dev Container
+name: EML Extracto
 services:
   devcontainer:
-    container_name: rust-devcontainer
+    container_name: eml_extractor
     build:
       context: .
       dockerfile: Dockerfile

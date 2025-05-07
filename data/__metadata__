@@ -1,0 +1,20 @@
+{
+    "sender": "SEDNA Validation - SEDNA Validation <sednavalidation@flytta.uk>", 
+    "recipients": "testit@flytta.trade", 
+    "subject": "FWD: FORD EAD REQUEST // 26.03.2025 // EKGB 3251243", 
+    "eml_uri": "s3://flytta-email-input/declaration/test.stuff.here/jk6p1jpnetqnq0v0vd8vba06bath4imgtk091bg1", 
+    "eml_url": "https://flytta-email-input.s3.eu-west-1.amazonaws.com/declaration/test.stuff.here/jk6p1jpnetqnq0v0vd8vba06bath4imgtk091bg1", 
+    "date": "Thu, 27 Mar 2025 11:16:15 +0000", 
+    "message_id": "<e8907356-bfcc-4c92-ad3f-50ebff32b652@flytta.uk>", 
+    "in_reply_to": "<10f4febf-23b7-4b8f-b75d-4b9ba09891c1@sedna.com>", 
+    "references": "<10f4febf-23b7-4b8f-b75d-4b9ba09891c1@sedna.com>", 
+    "content_type": "multipart/mixed", 
+    "charset": null, 
+    "boundary": "----=_Part_3_1510542937.1743074175017", 
+    "multipart": true, 
+    "uploaded_files": [
+        "stuff/jk6p1jpnetqnq0v0vd8vba06bath4imgtk091bg1/email_contents/text_content.txt", 
+        "stuff/jk6p1jpnetqnq0v0vd8vba06bath4imgtk091bg1/email_contents/html_content.html", 
+        "stuff/jk6p1jpnetqnq0v0vd8vba06bath4imgtk091bg1/email_contents/4036_001 (1).pdf"
+        ]
+    }

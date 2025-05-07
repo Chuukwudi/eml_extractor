@@ -1,0 +1,46 @@
+{
+  "attachment_count": 1,
+  "date": "2025-03-27T11:16:15Z",
+  "from": {
+    "List": [
+      {
+        "address": "sednavalidation@flytta.uk",
+        "name": "SEDNA Validation - SEDNA Validation"
+      }
+    ]
+  },
+  "html_body_count": 1,
+  "in_reply_to": {
+    "Text": "10f4febf-23b7-4b8f-b75d-4b9ba09891c1@sedna.com"
+  },
+  "message_id": "e8907356-bfcc-4c92-ad3f-50ebff32b652@flytta.uk",
+  "mime_version": {
+    "Text": "1.0"
+  },
+  "references": {
+    "Text": "10f4febf-23b7-4b8f-b75d-4b9ba09891c1@sedna.com"
+  },
+  "reply_to": {
+    "List": [
+      {
+        "address": "sednavalidation@flytta.uk",
+        "name": "SEDNA Validation - SEDNA Validation"
+      }
+    ]
+  },
+  "return_address": "<bounces+49674304-1a22-testit=flytta.trade@sedna.flytta.uk>",
+  "return_path": {
+    "Text": "<bounces+49674304-1a22-testit=flytta.trade@sedna.flytta.uk>"
+  },
+  "subject": "FWD: FORD EAD REQUEST // 26.03.2025 // EKGB 3251243",
+  "text_body_count": 1,
+  "thread_name": "FORD EAD REQUEST // 26.03.2025 // EKGB 3251243",
+  "to": {
+    "List": [
+      {
+        "address": "testit@flytta.trade",
+        "name": null
+      }
+    ]
+  }
+}

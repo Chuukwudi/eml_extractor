@@ -1,0 +1,43 @@
+{
+  "sender": {
+    "addresses": {
+      "SEDNA Validation - SEDNA Validation": "sednavalidation@flytta.uk"
+    }
+  },
+  "to": {
+    "addresses": {
+      "Unknown": "testit@flytta.trade"
+    }
+  },
+  "cc": {
+    "addresses": {}
+  },
+  "bcc": {
+    "addresses": {}
+  },
+  "from": {
+    "addresses": {
+      "SEDNA Validation - SEDNA Validation": "sednavalidation@flytta.uk"
+    }
+  },
+  "reply_to": {
+    "addresses": {
+      "SEDNA Validation - SEDNA Validation": "sednavalidation@flytta.uk"
+    }
+  },
+  "resent_bcc": {
+    "addresses": {}
+  },
+  "resent_cc": {
+    "addresses": {}
+  },
+  "resent_from": {
+    "addresses": {}
+  },
+  "resent_sender": {
+    "addresses": {}
+  },
+  "resent_to": {
+    "addresses": {}
+  }
+}
