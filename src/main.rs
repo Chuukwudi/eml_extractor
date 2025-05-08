@@ -1,5 +1,6 @@
 use std::fs;
-use mail_parser::{Address, HeaderValue, MessageParser};
+use mail_parser::{Message, Address, HeaderValue, MessageParser};
+
 
 
 fn parse_eml_from_filepath(file_path: &str) -> mail_parser::Message {
@@ -11,10 +12,8 @@ fn parse_eml_from_filepath(file_path: &str) -> mail_parser::Message {
         .with_message_ids()
         .with_minimal_headers()
         .parse(&contents);
-    match message {
-        Some(msg) => msg.into_owned(),
-        None => panic!("Failed to parse the message"),
-    }
+
+    message.map_or_else(|| panic!("Failed to parse the message"), Message::into_owned)
 }
 
 fn get_details(message: &mail_parser::Message) -> String {
@@ -104,14 +103,14 @@ fn get_body(message: &mail_parser::Message, ) -> (String, String) {
     let mut html = String::new();
     for n in 0..text_body_count {
         let text_body = message.body_text(n);
-        if text_body.is_some() {
-            text.push_str(&text_body.unwrap());
+        if let Some(txt) = text_body.as_deref() {
+            text.push_str(txt);
         }
     }
     for n in 0..html_body_count {
         let html_body = message.body_html(n);
-        if html_body.is_some() {
-            html.push_str(&html_body.unwrap());
+        if let Some(html_) = html_body.as_deref() {
+            html.push_str(html_);
         }
     }
     if text.is_empty() {
@@ -138,6 +137,6 @@ fn main() {
     fs::write("/app/data/message.txt", message_txt.clone()).expect("Unable to write file");
     fs::write("/app/data/message.html", message_html_content.clone()).expect("Unable to write file");
     
-    println!("Text Body: {}", message_txt);
-    println!("HTML Body: {}", message_html_content);
+    println!("Text Body: {message_txt}");
+    println!("HTML Body: {message_html_content}");
 }

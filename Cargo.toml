@@ -2,9 +2,21 @@
 name = "eml_extractor"
 version = "0.1.0"
 edition = "2021"
+description = "A Rust library for extracting and parsing EML files."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Chuukwudi/eml_extractor.git"
+keywords = ["eml", "email", "parser", "rust", "eml-parser", "email-extractor"]
+categories = ["eml", "email"]
+
 
 [dependencies]
 mail-parser = { version = "0.10.2", features = ["serde_support"] }
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
 serde_with = "3.12.0"
+
+[lints.clippy]
+all = "warn"  # or "deny" for stricter enforcement
+pedantic = "warn"
+nursery = "warn"
+cargo = "warn"
